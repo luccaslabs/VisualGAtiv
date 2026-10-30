@@ -1,0 +1,28 @@
+algoritmo "Laço"
+
+var
+  qtdaluno, contador: inteiro
+  Nomealuno: caracter
+  alunos: vetor[1..1000] de caracter
+
+inicio
+
+  contador <- 1
+
+  escreval("Digite a quantidade de aluno")
+  leia(qtdaluno)
+
+  para contador de 1 ate qtdaluno faca
+    escreval("Digite o nome do ", contador, " ° aluno")
+    leia(Nomealuno)
+    alunos[contador] <- Nomealuno
+  fimpara
+
+
+  para contador de 1 ate qtdaluno faca
+    escreval(alunos[contador])
+
+  fimpara
+
+
+fimalgoritmo
